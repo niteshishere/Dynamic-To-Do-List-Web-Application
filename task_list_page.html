@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        #nav,
+        #card {
+            text-shadow: 1px 1px 3px black;
+            box-shadow: 2px 2px 20px black;
+            border-radius: 2px;
+        }
+        
+        #end {
+            margin-top: 103px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- body color is white  -->
+    <nav class=" navbar bg-success bg-gradient bg-opacity-100 ">
+        <div>
+            <h3 id='nav' class="navbar-brand text-dark border-start border-danger border-5 ms-2 ">📝 Day Task 🕒</h3>
+        </div>
+    </nav>
+
+    <div class="mt-5 row w-100 ">
+        <div class="col-6 m-auto" ;>
+
+            <!-- Input Card -->
+            <div class="card shadow mb-3" ;>
+                <div id='card' class="card-header" ;>
+                    <h2 class="text-center bg-warning text-white border-bottom border-danger border-3 ">ToDo List 📃</h2>
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div>
+                                <input type="text" ; placeholder="Enter the task" ; class="form-control" ; id="task-ele" ;>
+                            </div>
+                            <div class="mt-2 ">
+                                <input class='bg-dark text-light border-success shadow rounded' type="submit" ; value="Submit" ;>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task Display Container (below input card) -->
+            <div id="task-container" ;></div>
+
+        </div>
+    </div>
+
+
+    <!-- Link external JS -->
+    <script src="./event4.js"></script>
+</body>
+
+</html>
